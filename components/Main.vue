@@ -43,19 +43,7 @@
 </script>
 
 <style scoped>
-.main{
-    background-color: white;
-    background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-position-x: 125vh;
-  width:100%;
-  height:100vh;
-  background-color: #f2eee6;
-  background-attachment: fixed;
-    background: linear-gradient(to bottom, transparent, transparent),url('../assets/images/mainbackground.png') ;
 
-}
 /* .fade{
    background:  linear-gradient(180deg, rgba(0, 0, 0, 0.16) 0%, rgba(0, 0, 0, 0) 70.31%);
     background-clip: text;

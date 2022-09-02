@@ -1,5 +1,5 @@
 <template>
-    <div class="banner">
+    <div class="featuresbanner">
         <div class="w-full h-full flex">
 
             <!-- <h1 class=" font-bold font-[gotham-bold] text-white">4K</h1> -->
@@ -37,16 +37,6 @@
 
 
 <style scoped>
-    .banner{
-        background-image:url('../assets/images/4k.svg');
-        background-size:cover;
-        padding-top:5%;
-        padding-bottom:5%;
-        margin-top:10%;
-        margin-bottom: 10%;
-        
-        
-    }
 
     
     </style>
