@@ -56,4 +56,27 @@
 	-webkit-text-fill-color: transparent;
     font-size:150px;
 }
+.main{
+    /* background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-position-x: 125vh;
+  width:100%;
+  height:100vh;
+  background-color: #f2eee6;
+  background-attachment: fixed;
+    background: linear-gradient(to bottom, transparent,url('@/assets/images/mainbackground.png')) ; */
+    
+    width:100%;
+    height: 100vh;
+    background-image:url('@/assets/images/mainbackground.png'),
+    linear-gradient(to right,transparent,transparent);
+    background-repeat: no-repeat;
+    background-position: right, left;
+    background-size: 40%, 60%;
+
+    
+
+}   
+
 </style>

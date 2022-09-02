@@ -1,29 +1,53 @@
 <template>
     <div class="h-auto w-full flex flex-col ">
 
-        <div class=" flex pt-16 gap-4 pl-20 pr-20 ">
-            <img src="~/assets/images/drone1.svg">
 
-            
-            <div class="w-8/12   flex flex-col gap-4  justify-end">
-                <h2 class="font-[gotham-bold] font-bold text-3xl">Fly It Anywhere</h2>
-                <p class="w-9/12 text-2xl">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse et lacus suscipit ex ultrices lobortis. Nullam eget tellus ut massa.</p>
+        <div class="h-[600px] px-[5%] pt-16">
+            <div class="w-full h-full flex gap-4 items-end">
 
-                <div class="flex gap-4 pr-12">
-                    <img src="~/assets/images/drone2.svg" class="w-4/12"/>
-
-                    <img src="~/assets/images/drone3.svg" class="w-4/12"/>
-
-                    <img src="~/assets/images/drone4.svg" class="w-4/12"/>
+                
+                <div class="h-full w-5/12 ">
+                    <img src="~/assets/images/drone1.svg " class="object-cover w-full h-full ">
                 </div>
 
+
+                <div class="  w-7/12 flex flex-col gap-4 ">
+
+                 
+                    <h2 class="font-[gotham-bold] font-bold text-3xl">Fly It Anywhere</h2>
+                <p class="w-10/12 text-2xl font-[gotham-light] font-[400]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse et lacus suscipit ex ultrices lobortis. Nullam eget tellus ut massa.</p>
+
+                <div class="bordr-2 border-[teal] w-full flex justify-end font-[gotham-bold]">
+                    See More
+                </div>
+
+                    <div class="w-full flex gap-2  space-x-4">
+                        <img src="~/assets/images/drone2.svg" class="object-cover w-full"/>
+
+                        <img src="~/assets/images/drone3.svg" class="object-cover w-full"/>
+
+                        <img src="~/assets/images/drone4.svg" class="object-cover w-full"/>
+                    </div>
+                </div>
+
+              
+
+
+            
+
+
+
+
+
             </div>
-
-
-
         </div>
 
-        <FeaturesBanner />
+        <FeaturesBanner /> 
+
+
+            
+
+        
         
        
 
@@ -45,6 +69,16 @@ export default defineComponent({
 </script>
 
 <style scoped>
+
+/* .grid {
+        grid-template-columns: repeat(auto-fit, minmax(22.2rem, 4fr));
+      
+        padding-left:5%;
+        padding-right:5%;
+    } */
+
+
+
 .drone1{
     background: url('../assets/images/drone1.svg');
     background-size: cover;

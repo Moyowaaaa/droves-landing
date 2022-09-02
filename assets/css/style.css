@@ -59,21 +59,18 @@ body{
     background: #141414; 
     -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
 }
+.fade h2 {
+	
+    background:  linear-gradient(180deg, rgba(0, 0, 0, 0.16) 0%, rgba(0, 0, 0, 0) 70.31%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+    font-size:150px;
+}
 
 
-.main{
-    background-color: white;
-    background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-position-x: 125vh;
-  width:100%;
-  height:100vh;
-  background-color: #f2eee6;
-  background-attachment: fixed;
-    background: linear-gradient(to bottom, transparent, transparent),url('@/assets/images/mainbackground.png') ;
 
-}   
+
+
 
 .shopbanner{
     background-image:url('@/assets/images/jumbotron.svg');
