@@ -24,7 +24,7 @@
             </div>
 
             <div class="absolute right-48 top-24 h-4/6 w-[60vw] object-cover">
-            <img src="../assets/images/main.svg" class="h-full w-full object-cover">
+            <img src="~/assets/images/main.svg" class="h-full w-full object-cover">
         </div>
         </div>
 

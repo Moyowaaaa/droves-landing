@@ -41,10 +41,10 @@
         <div class="lg:absolute  right-16 h-[5rem] justify-end pb-10 flex flex-col">
                      <p>Follow Us:</p>
                 <div class="flex gap-4  items-center">
-                    <img src="../assets/images/instagram.svg" width="16px">
-                     <img src="../assets/images/youtube.svg" width="16px">
-                      <img src="../assets/images/twitter.svg" width="16px"/>
-                      <img src="../assets/images/facebook.svg" width="11px">
+                    <img src="~/assets/images/instagram.svg" width="16px">
+                     <img src="~/assets/images/youtube.svg" width="16px">
+                      <img src="~/assets/images/twitter.svg" width="16px"/>
+                      <img src="~/assets/images/facebook.svg" width="11px">
                 </div>
 
 
