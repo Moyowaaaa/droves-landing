@@ -2007,6 +2007,11 @@
   "resolved" "https://registry.npmjs.org/graceful-fs/-/graceful-fs-4.2.10.tgz"
   "version" "4.2.10"
 
+"gsap@^3.11.0":
+  "integrity" "sha512-TV5aFGqXht+0o/CelnhCikSe3QGeG+q1XA/fyFFsMzesILHgWgFWIz0NuXIgcMaL5h7MG2l+j0BTupS5YyYkrw=="
+  "resolved" "https://registry.npmjs.org/gsap/-/gsap-3.11.0.tgz"
+  "version" "3.11.0"
+
 "gzip-size@^7.0.0":
   "integrity" "sha512-O1Ld7Dr+nqPnmGpdhzLmMTQ4vAsD+rHwMm1NLUmoUFFymBOMKxCCrtDxqdBRYXdeEPEi3SyoR4TizJLQrnKBNA=="
   "resolved" "https://registry.npmjs.org/gzip-size/-/gzip-size-7.0.0.tgz"

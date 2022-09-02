@@ -5,7 +5,7 @@
         <div class="grid ">
             <div class="w-auto shadow-2xl ">
                 <img src="~/assets/images/drone5.svg" class="cover-image">
-                <div class="py-6 pl-4">
+                <div class="py-8 pl-4">
                 <p class="text-3xl font-bold font-[gotham-bold]">Mount Series 1</p>
                 <p class="font-[gotham-light]">$299.99</p>
                 </div>
@@ -14,7 +14,7 @@
 
             <div class="w-auto shadow-2xl">
                 <img src="~/assets/images/drone6.svg" class="cover-image">
-                <div class="py-6 pl-4">
+                <div class="py-8 pl-4">
                 <p class="text-3xl font-bold font-[gotham-bold]"> Valley Series 1</p>
                 <p class="font-[gotham-light]">$249.99</p>
                 </div>  
@@ -22,7 +22,7 @@
 
 <div class="w-auto shadow-2xl">
     <img src="~/assets/images/drone7.svg" class="cover-image">
-    <div class="py-6 pl-4">
+    <div class="py-8 pl-4">
     <p class="text-3xl font-bold font-[gotham-bold]">Droves Series 1</p>
     <p class="font-[gotham-light]">$199.99</p>
     </div>
