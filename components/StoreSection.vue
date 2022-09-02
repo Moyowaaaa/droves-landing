@@ -51,4 +51,14 @@
         
     }
 
+
+    @media screen and (max-width:485px) {
+        .grid{
+            padding-right:0;
+            padding-left:0;
+            grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+        }
+        
+    }
+
 </style>

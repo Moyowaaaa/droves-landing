@@ -78,6 +78,7 @@ body{
     padding-top:15%;
     padding-bottom:15%;
     margin-top:15%;
+
     
     
 }
@@ -91,4 +92,25 @@ body{
     margin-bottom: 10%;
     
     
+}
+
+
+@media screen and (max-width:480px) {
+    .shopbanner{
+         height:auto;
+        padding-top:52%;
+        padding-bottom:5%;
+        background-position-x: -60vh;
+        background-position-y: 82vh;
+        background-attachment: fixed;
+    }
+    .featuresbanner{
+        height:auto;
+        padding-top:52%;
+        padding-bottom:5%;
+        background-position-x: 150vh;
+        background-position-y: -92vh;
+        background-attachment: fixed;
+    }
+
 }

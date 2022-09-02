@@ -17,12 +17,12 @@
 
 <template>
     <div>
-        <div class="w-full h-[4rem]   flex items-center  justify-between px-20" ref="navbar">
+        <div class="w-full h-[4rem]   flex items-center  justify-between lg:px-20" ref="navbar">
             <div ref="navLogo">
                 <h2 class="font-[gotham-bold] text-3xl">Droves</h2>
             </div>
             
-            <div class="flex items-center gap-4 text-white font-[gotham-light]" ref="navLinks">
+            <div class="hidden lg:flex items-center gap-4 text-white font-[gotham-light]" ref="navLinks">
                 <p>About</p>
                 <p>Support</p>
                 <p>Explore</p>

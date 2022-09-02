@@ -1,9 +1,9 @@
 <template>
 
-    <div class="my-12 text-black">
-        <div class="w-full pl-0  flex justify-center gap-[12rem]">
+    <div class="my-12 pl-4 lg:pl-0 text-black">
+        <div class="w-full pl-0  flex flex-col justify-center lg:gap-[12rem] lg:flex-row">
 
-            <div class="text-sm lg:text-base  py-20 ">
+            <div class="text-sm lg:text-base py-6 lg:py-20 ">
                         <p class="font-bold">Help & Support</p>
                 <p>Shipment & Delivery</p>
                 <p>Payment Guide</p>
@@ -14,7 +14,7 @@
                     </div>
 
 
-                    <div class="text-sm lg:text-base   py-20 ">
+                    <div class="text-sm lg:text-base py-6 lg:py-20">
                 <p class="font-bold">About Us</p>
                 
                 <p>About Droves</p>
@@ -25,7 +25,7 @@
             </div>
 
             
-            <div class="text-sm lg:text-base py-20 ">
+            <div class="text-sm lg:text-base  py-6 lg:py-20 ">
                 <p class="font-bold">Products</p>
                 <p>Droves Mount Series</p>
                 <p>Droves Series</p>
@@ -38,7 +38,7 @@
 
         </div>
 
-        <div class="lg:absolute  right-16 h-[5rem] justify-end pb-10 flex flex-col">
+        <div class="lg:absolute  right-16 h-[5rem] justify-end pb-10 flex flex-col ">
                      <p>Follow Us:</p>
                 <div class="flex gap-4  items-center">
                     <img src="~/assets/images/instagram.svg" width="16px">
