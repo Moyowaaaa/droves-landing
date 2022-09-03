@@ -1,6 +1,6 @@
 <template>
-    <div class="h-screen w-full flex flex-col mt-[35rem] ">
-        <h2 class="text-[gotham-bold] text-center text-4xl mb-[4rem]">DROVES</h2>
+    <div class="h-screen w-full flex flex-col mt-[6rem] lg:mt-0">
+        <h2 class="text-[gotham-bold] text-center text-4xl mb-[2rem]">DROVES</h2>
 
         <div class="grid ">
             <div class="w-auto shadow-2xl ">

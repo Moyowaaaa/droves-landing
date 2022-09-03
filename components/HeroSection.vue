@@ -30,7 +30,7 @@
 
 
 <template>
-    <div class="h-auto w-full flex flex-col  " ref="heroSection">
+    <div class="h-auto w-full flex flex-col mt-[5rem] "  ref="heroSection">
 
 
         <div class="h-max lg:h-[600px] lg:px-[5%] ">

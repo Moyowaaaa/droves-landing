@@ -27,9 +27,30 @@
     src: local('gotham-bold'),
     url('../fonts/GothamBold.otf') format('opentype');
 }
+@font-face {
+    font-family: "open-sans";
+    src: local('open-sans'),
+    url('../fonts/OpenSans-Regular.ttf') 
+}
+@font-face {
+    font-family:"sans-light" ;
+    src: local('sans-light'),
+    url('../fonts/OpenSans-Light.ttf')
+}
+@font-face {
+    font-family: 'sans-extra';
+    src: local('sans-extra'),
+    url('../fonts/OpenSans-ExtraBold.ttf')
+}
+@font-face {
+    font-family: 'sans-bold';
+    src: local('sans-bold'),
+    url('../fonts/OpenSans-Semibold.ttf')
+}
 
 body{
     margin: 0;
+   
 }
 
 .fade{
@@ -75,9 +96,9 @@ body{
 .shopbanner{
     background-image:url('@/assets/images/jumbotron.svg');
     background-size:cover;
-    padding-top:15%;
-    padding-bottom:15%;
-    margin-top:15%;
+    padding-top:10%;
+    padding-bottom:10%;
+    margin-top:10%;
 
     
     
@@ -106,7 +127,7 @@ body{
     }
     .featuresbanner{
         height:auto;
-        padding-top:52%;
+        padding-top:25%;
         padding-bottom:5%;
         background-position-x: 150vh;
         background-position-y: -92vh;

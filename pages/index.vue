@@ -2,7 +2,7 @@
 
 	<div class="">
 		<Main />
-		 <AboutSection class="mb-[75rem] lg:mb-0"/>
+		 <AboutSection/>
 		<StoreSection />
 		
 

@@ -1,5 +1,5 @@
 <template>
-    <div class="min-h-screen h-screen">
+    <div class="">
         <HeroSection />
     </div>
 </template>
