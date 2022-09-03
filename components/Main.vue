@@ -41,7 +41,7 @@
             <Navbar />
 
             <div class="flex h-full h-full" ref="heroSection">
-            <div class="w-full lg:w-8/12 h-full pl-4 lg:pl-20 flex flex-col gap-12 mt-[20vh] lg:mt-0 lg:justify-center">
+            <div class="w-full lg:w-8/12 h-full pl-4 lg:pl-20 flex flex-col gap-12 mt-[15vh] lg:mt-0 lg:justify-center">
               <h1 class="text-4xl lg:text-7xl font-extrabold font-[sans-extra] " ref="heroHeader">Fly With The Birds</h1>  
               
               
