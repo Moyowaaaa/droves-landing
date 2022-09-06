@@ -54,7 +54,9 @@ tl.to(aboutSectionHead.value, { y: 0, opacity: 1, clipPath: "polygon(0 100%, 100
 
                  
                     <h2 class="font-[gotham-bold] font-bold text-3xl" ref="aboutSectionHead">Fly It Anywhere</h2>
-                <p class="lg:w-10/12  text-xl lg:text-2xl font-[gotham-light] font-[400]" ref="aboutSectionText">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse et lacus suscipit ex ultrices lobortis. Nullam eget tellus ut massa.</p>
+                <p class="lg:w-10/12  text-xl lg:text-2xl font-[gotham-light] font-[400]" ref="aboutSectionText">With advanced technology in place to reach great heights and
+depths Droves gives to the opportunity with our various range
+of drones to reach those limits.</p>
 
                 <div class="bordr-2 border-[teal] w-full flex justify-end font-[gotham-bold]" ref="seeMore">
                     See More
