@@ -8,22 +8,17 @@
     const MainDrone = ref<HTMLDivElement>(null)
     const fadedText = ref<HTMLDivElement>(null)
     const heroButtons = ref<HTMLDivElement>(null)
-    const heroButtonText = ref<HTMLElement>(null)
-    const heroButtonText2 = ref<HTMLElement>(null)
+
 
 
         onMounted(() =>{
             const tl = gsap.timeline()
-            tl.fromTo(heroSection.value, {opacity: 0 }, { opacity: 1 });
+             tl.fromTo(heroSection.value, {opacity: 0 }, { opacity: 1 });
+              tl.to(heroHeader.value, { y: 0, opacity: 1, clipPath: "polygon(0 100%, 100% 100%, 100% 0, 0 0)" }, "<0.1");
+            tl.from(fadedText.value, {opacity:0, duration:.8, y:"100", ease:"power3.inOut"})
+            tl.from(heroText.value,{opacity:0, duration:.8, y:"-100", ease:"power3.inOut"}, "-=1")
+            tl.from(heroButtons.value, {opacity:0, duration:.8, y:"-100", ease:"power3.inOut"}, "-=1")
 
-            tl.to(heroHeader.value, { y: 0, opacity: 1, clipPath: "polygon(0 100%, 100% 100%, 100% 0, 0 0)" }, "<0.1");
-            tl.fromTo([heroButtonText.value, heroButtonText2.value], {y: 0, opacity: 0, }, { opacity:1, clipPath: "polygon(0 100%, 100% 100%, 100% 0, 0 0)"}, "<0.1");;
-            
-            tl.from(heroText.value, {  opacity: 0, y:"-100%",  ease:"power3.easeinOut",}, "<0.1");
-            tl.from(MainDrone.value, {duration:1, opacity:0, ease:"power3.inOut",scale:2.5,  }, "<0.1")
-   
-
-            console.log(heroText.value)
 
             
         })
@@ -50,13 +45,13 @@
               
               <p class="font-normal font-[open-sans] text-2xl" ref="heroText">Go beyond the mountains and into the valleys</p>
 
-              <div class="flex gap-4" >
-                <button class="p-4 lg:p-6 flex items-center justify-center bg-[black] text-[white] text-sm lg:text-2xl font-semibold font-[sans-light]" >
-                   <p ref="heroButtonText "> Mount Series 1 </p>  
+              <div class="flex gap-4" ref="heroButtons">
+                <button class="p-4 lg:p-6 flex items-center justify-center bg-[black] text-[white] text-sm lg:text-2xl font-semibold font-[sans-light]">
+                   <p > Mount Series 1 </p>  
                 </button>
 
-                <button class="p-4 lg:p-6 flex items-center justify-center border-2 border-[black] text-sm lg:text-2xl font-semibold font-[sans-light]">
-                    <p ref="heroButtonText2 ">Valley Series 1</p>
+                <button class="p-4 lg:p-6 flex items-center justify-center border-2 border-[black] text-sm lg:text-2xl font-semibold font-[sans-light]" >
+                    <p>Valley Series 1</p>
                 </button>
               </div>
             </div>

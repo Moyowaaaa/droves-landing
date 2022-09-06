@@ -1,12 +1,35 @@
 <script setup lang="ts">
     import {gsap} from "gsap"
+    import {ScrollTrigger} from 'gsap/ScrollTrigger'
+      gsap.registerPlugin(ScrollTrigger)
 
 
-    const aboutSection = ref<HTMLDivElement>()
+
+    const aboutSection = ref<HTMLDivElement>(null)
+    const aboutSectionText = ref<HTMLElement>(null)
+    const aboutTextMainImage = ref<HTMLImageElement>(null)
+    const aboutSectionHead = ref<HTMLElement>(null)
+    const aboutImage1 = ref<HTMLImageElement>(null)
+    const aboutImage2 = ref<HTMLImageElement>(null)
+    const aboutImage3 = ref<HTMLImageElement>(null)
+    const seeMore = ref<HTMLElement>(null)
 
         onMounted(() => {
-           console.log(aboutSection.value)
-         
+           
+    
+
+let tl = gsap.timeline({scrollTrigger: {
+    trigger:aboutSection.value,
+    start:"top center",
+   
+}})
+
+tl.to(aboutSectionHead.value, { y: 0, opacity: 1, clipPath: "polygon(0 100%, 100% 100%, 100% 0, 0 0)" }, "<0.1");
+ tl.from(aboutSectionText.value, {  opacity: 0, y:"-100%",  ease:"power3.easeinOut",}, "<0.1");
+ tl.from([aboutImage1.value, aboutImage2.value, aboutImage3.value] , {  opacity: 0, y:"-100%", duration:.9, stagger:.6,  ease:"power3.easeinOut",}, "<0.1")
+  tl.from(aboutTextMainImage.value, {duration:1, opacity:0, ease:"power3.inOut",scale:2.5, }, "<0.1")
+  tl.from(seeMore.value, {  opacity: 0, y:"-100%",  ease:"power3.easeinOut",}, "<0.1");
+
         })
  
 
@@ -23,26 +46,26 @@
 
                 
                 <div class="h-full w-11/12 lg:w-5/12 ">
-                    <img src="~/assets/images/drone1.svg " class="object-cover w-full h-full ">
+                    <img src="~/assets/images/drone1.svg " class="object-cover w-full h-full " ref="aboutTextMainImage">
                 </div>
 
 
                 <div class=" w-11/12 lg:w-7/12 flex flex-col gap-6 lg:gap-4 ">
 
                  
-                    <h2 class="font-[gotham-bold] font-bold text-3xl">Fly It Anywhere</h2>
-                <p class="lg:w-10/12  text-xl lg:text-2xl font-[gotham-light] font-[400]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse et lacus suscipit ex ultrices lobortis. Nullam eget tellus ut massa.</p>
+                    <h2 class="font-[gotham-bold] font-bold text-3xl" ref="aboutSectionHead">Fly It Anywhere</h2>
+                <p class="lg:w-10/12  text-xl lg:text-2xl font-[gotham-light] font-[400]" ref="aboutSectionText">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse et lacus suscipit ex ultrices lobortis. Nullam eget tellus ut massa.</p>
 
-                <div class="bordr-2 border-[teal] w-full flex justify-end font-[gotham-bold]">
+                <div class="bordr-2 border-[teal] w-full flex justify-end font-[gotham-bold]" ref="seeMore">
                     See More
                 </div>
 
                     <div class="w-full flex flex-col lg:flex-row gap-2  lg:space-x-4">
-                        <img src="~/assets/images/drone2.svg" class="object-cover w-full"/>
+                        <img src="~/assets/images/drone2.svg"  loading="lazy" class="object-cover w-full" ref="aboutImage1"/>
 
-                        <img src="~/assets/images/drone3.svg" class="object-cover w-full"/>
+                        <img src="~/assets/images/drone3.svg" loading="lazy" class="object-cover w-full" ref="aboutImage2"/>
 
-                        <img src="~/assets/images/drone4.svg" class="object-cover w-full"/>
+                        <img src="~/assets/images/drone4.svg" loading="lazy" class="object-cover w-full" ref="aboutImage3"/>
                     </div>
                 </div>
 
