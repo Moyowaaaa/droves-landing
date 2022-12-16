@@ -1,7 +1,7 @@
 <script setup lang="ts">
     import {gsap} from "gsap"
 
-
+    const mainSection = ref<HTMLDivElement>(null)
     const heroSection = ref<HTMLDivElement>(null)
     const heroHeader = ref<HTMLDivElement>(null)
     const heroText = ref<HTMLDivElement>(null)
@@ -13,6 +13,7 @@
 
         onMounted(() =>{
             const tl = gsap.timeline()
+            tl.from(mainSection.value, {opacity:0,delay:0.1,duration:0.3,ease:"power3.inOut"})
              tl.fromTo(heroSection.value, {opacity: 0 }, { opacity: 1 });
               tl.to(heroHeader.value, { y: 0, opacity: 1, clipPath: "polygon(0 100%, 100% 100%, 100% 0, 0 0)" }, "<0.1");
             tl.from(fadedText.value, {opacity:0, duration:.8, y:"100", ease:"power3.inOut"})
@@ -32,7 +33,7 @@
 
 
 <template>
-    <div class="main h-screen mb-[5rem] lg:mb-0">
+    <div class="main h-screen mb-[5rem] lg:mb-0" ref="mainSection">
         
         <div class=" w-full flex  h-full flex-col ">
 
@@ -111,6 +112,7 @@
     background-repeat: no-repeat;
     background-position: right, left;
     background-size: 40%, 60%;
+    overflow: hidden;
 
     
 
