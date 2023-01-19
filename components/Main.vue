@@ -13,7 +13,7 @@
 
         onMounted(() =>{
             const tl = gsap.timeline()
-            tl.from(mainSection.value, {opacity:0,delay:0.1,duration:0.3,ease:"power3.inOut"})
+            tl.from(mainSection.value, {opacity:0,delay:0.3,duration:0.5,ease:"power4.inOut"})
              tl.fromTo(heroSection.value, {opacity: 0 }, { opacity: 1 });
               tl.to(heroHeader.value, { y: 0, opacity: 1, clipPath: "polygon(0 100%, 100% 100%, 100% 0, 0 0)" }, "<0.1");
             tl.from(fadedText.value, {opacity:0, duration:.8, y:"100", ease:"power3.inOut"})
